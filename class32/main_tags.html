@@ -1,35 +1,79 @@
 <!-- 
     Difference between bold and strong:
-     https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/strong
+    ** https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/strong
+    How to use rel attribute in <a> tags:
+    ** https://developers.google.com/search/docs/advanced/guidelines/qualify-outbound-links?hl=pt-br
 -->
 <!DOCTYPE html>
 <html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <style></style>
+    <title>
+      Here u'll see the following tags: del vs ins, a(href, target, rel),
+      img(src and alt), s vs u, small, sup vs sub, blockquote vs q(both with
+      cite attribute), blockquote, pre and code.
+    </title>
+    <style>
+      .img_in_text {
+        height: 25px;
+        width: 75px;
+      }
+      .color_red {
+        color: red;
+        font-size: 28px;
+      }
+    </style>
   </head>
   <body>
-    <h1>Cabeçalho</h1>
-    <h1>Cabeçalho</h1>
+    <del><h1>Old header</h1></del>
+    <ins><h1>New header</h1></ins>
     <p>
-      <b>Lorem</b>ipsum dolor sit <em>amet consectetur</em> adipisicing elit. Corrupti
-      nam illo, eligendi facilis minus deserunt voluptas corporis perspiciatis
-      velit blanditiis dolor voluptatum aliquid ipsa vitae qui expedita quas
-      excepturi at! Quisquam est corporis iusto vero unde accusamus hic numquam
-      molestiae ut ipsum optio natus, ipsam suscipit fuga cupiditate, tempore
-      libero porro? Enim corporis maiores vel! Minima sunt similique tempore
-      molestias.
-    </p>
-    <p>
-      Lorem <strong>ipsum</strong> dolor sit <i>amet consectetur</i> adipisicing elit.
-      Corrupti nam illo, eligendi facilis minus deserunt voluptas corporis
+      <b>Lorem</b>ipsum dolor sit <em>amet consectetur</em> adipisicing elit.
+      <a
+        href="./id_and_classes_atributtes.html"
+        target="_blank"
+        rel="noreferrer noopener"
+      >
+        <img
+          class="img_in_text"
+          src="https://img2.gratispng.com/20180320/dde/kisspng-web-development-html-css3-canvas-element-web-desig-w3c-html5-logo-5ab0c840061922.801355261521535040025.jpg"
+          alt="Logo do Html5"
+        />
+      </a>
+      <s>nam</s> illo, <u>eligendi</u> facilis minus deserunt voluptas corporis
       perspiciatis velit blanditiis dolor voluptatum aliquid ipsa vitae qui
       expedita quas excepturi at! Quisquam est corporis iusto vero unde
       accusamus hic numquam molestiae ut ipsum optio natus, ipsam suscipit fuga
       cupiditate, tempore libero porro? Enim corporis maiores vel! Minima sunt
       similique tempore molestias.
     </p>
+    <hr />
+    <p>
+      <span class="color_red">Lorem </span><strong>ipsum</strong> dolor sit
+      <i>amet consectetur</i> adipisicing elit.
+      <small>Corrupti</small> 2<sup>2</sup>, 2<sub>2</sub> nam illo, eligendi
+      facilis minus deserunt voluptas corporis
+      <q cite="https://en.wiktionary.org/wiki/perspiciatis">perspiciatis</q>
+      velit blanditiis dolor voluptatum aliquid ipsa vitae qui expedita quas
+      excepturi at! Quisquam est corporis iusto vero unde accusamus hic numquam
+      molestiae ut ipsum optio natus, ipsam suscipit fuga cupiditate, tempore
+      libero porro? Enim corporis maiores vel! Minima sunt similique tempore
+      molestias.
+    </p>
+    <blockquote
+      cite="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/blockquote"
+    >
+      Here is the citation block.
+      <p>This is the citation block.</p>
+    </blockquote>
+    <pre>
+      <code>
+        function press() {
+          console.log("I'm pressed")
+        }
+      </code>
+    </pre>
+    <div class="color_red">I'm a generic block</div>
   </body>
 </html>
