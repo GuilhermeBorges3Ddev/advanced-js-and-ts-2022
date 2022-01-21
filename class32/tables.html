@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Table exemplified using a triangular matrix</title>
+    <style>
+      body {
+        font-family: sans-serif;
+      }
+      main {
+        max-width: 100%;
+        overflow-x: auto;
+      }
+      .triangular_element {
+        background: red;
+        color: white;
+      }
+      .normal_element {
+        background: black;
+        color: white;
+      }
+      table {
+        border-collapse: collapse;
+        width: 800px;
+      }
+      table caption {
+        caption-side: bottom;
+        text-align: center;
+        font-style: italic;
+        font-size: 16px;
+        margin: 5px 0;
+      }
+      table th,
+      table td {
+        width: 33%;
+        border: 1px solid #ccc;
+        padding: 5px;
+        text-align: center;
+      }
+      tfoot td,
+      table th {
+        background: #ddd;
+      }
+      tfoot td {
+        width: 33%;
+        font-size: 16px;
+        border: none;
+        font-weight: 900;
+        font-style: italic;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>The NxN matrix element where N = N are red, see the result:</h1>
+    <main>
+      <table>
+        <caption>
+          Description: Showing a triangular matrix
+        </caption>
+        <thead>
+          <tr>
+            <th>Column One</th>
+            <th>Column Two</th>
+            <th>Column Three</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="triangular_element">X</td>
+            <td class="normal_element">0</td>
+            <td class="normal_element">0</td>
+          </tr>
+          <tr>
+            <td class="normal_element">0</td>
+            <td class="triangular_element">X</td>
+            <td class="normal_element">0</td>
+          </tr>
+          <tr>
+            <td class="normal_element">0</td>
+            <td class="normal_element">0</td>
+            <td class="triangular_element">X</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="2" rowspan="2"></td>
+            <td>TOTAL OF NxN ELEMENTS:</td>
+          </tr>
+          <tr>
+            <td>3</td>
+          </tr>
+        </tfoot>
+      </table>
+    </main>
+  </body>
+</html>
