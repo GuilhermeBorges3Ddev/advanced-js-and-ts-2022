@@ -29,6 +29,11 @@
       #send_btn {
         background-color: #0f0;
       }
+      textarea {
+        resize: none;
+        width: 250px;
+        height: 150px;
+      }
     </style>
   </head>
   <body>
@@ -116,6 +121,72 @@
           accept="image/*,.xlsx"
           multiple
         />
+      </div>
+      <div class="input_wrapper">
+        <label for="password">Password:</label>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          placeholder="Type your password"
+        />
+      </div>
+      <div class="input_wrapper">
+        <label for="range">Select your lvl of HTML in the range:</label>
+        <input
+          type="range"
+          id="range"
+          name="range"
+          min="0"
+          max="10"
+          step="2"
+          list="tickmarks"
+        />
+        <datalist id="tickmarks">
+          <option value="0" label="0%"></option>
+          <option value="2" label="20%"></option>
+          <option value="4" label="40%"></option>
+          <option value="6" label="60%"></option>
+          <option value="8" label="80%"></option>
+          <option value="10" label="100%"></option>
+        </datalist>
+      </div>
+      <div class="input_wrapper">
+        <label for="url">Your site here:</label>
+        <input
+          type="url"
+          id="url"
+          name="url"
+          placeholder="https://mysite.com"
+        />
+      </div>
+      <div class="input_wrapper">
+        <label for="search">Search for some category:</label>
+        <input
+          type="search"
+          id="search"
+          name="search"
+          placeholder="Type your category here"
+        />
+      </div>
+      <div class="input_wrapper">
+        <label for="select">Choose your favorite fruit:</label>
+        <select name="select" id="select">
+          <optgroup label="Citric fruits">
+            <option value="pineapple">Pineapple</option>
+            <option value="orange" label="Orange"></option>
+            <option value="lemon">Lemon</option>
+          </optgroup>
+          <optgroup label="Small fruits">
+            <option value="blueberry" selected>Blueberry</option>
+            <option value="cherry" disabled>Cherry</option>
+            <option value="blackberry">Blackberry</option>
+          </optgroup>
+        </select>
+      </div>
+      <div class="input_wrapper">
+        <label for="textarea">Send a message for us:</label>
+        <textarea id="textarea" name="textarea"></textarea>
       </div>
       <div class="input_wrapper">
         <button id="reset_btn" type="reset">Reset</button>
