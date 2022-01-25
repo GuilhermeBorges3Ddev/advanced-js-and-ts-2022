@@ -1,5 +1,19 @@
 .box {
-    background: red;
-    height: 120px;
-    width: 120px;
+  background: red;
+  height: 120px;
+  width: 120px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+} 
+
+#first_paragraph , #first_heading {
+    color: magenta;
+}
+
+body div section #second_paragraph,
+body div section #second_heading {
+  color: red;
 }
