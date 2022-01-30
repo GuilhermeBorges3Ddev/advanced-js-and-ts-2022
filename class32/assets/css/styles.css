@@ -9,6 +9,11 @@
   padding: 0;
 }
 
+div {
+  color: initial;
+  margin-left: 20px;
+}
+
 #first_paragraph,
 #first_heading {
   color: magenta;
@@ -32,11 +37,6 @@ section.checkboxes {
 .main_content h2.heading {
   font-style: italic;
   color: red;
-}
-
-div {
-  color: initial;
-  margin-left: 20px;
 }
 
 .father {
