@@ -67,6 +67,26 @@ section.checkboxes {
   text-decoration: underline slateblue;
 }
 
+[my-attribute~="valueX"] {
+  text-decoration: underline tomato;
+}
+
+[my-attribute|="valueSpecial"] {
+  text-decoration: underline peru;
+}
+
+[my-attribute^="some"] {
+  text-decoration: underline forestgreen;
+}
+
+[my-attribute$="G"] {
+  text-decoration: underline violet;
+}
+
+[id*="tH1"] {
+  text-decoration: underline lime;
+}
+
 [checked] {
   width: 50px;
   height: 50px;
