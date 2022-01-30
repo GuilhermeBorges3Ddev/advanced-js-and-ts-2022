@@ -1,0 +1,67 @@
+a {
+  color: darkorange;
+}
+
+a:link {
+  color: deeppink;
+}
+
+a:visited {
+  color: magenta;
+}
+
+a:hover {
+    text-decoration: none;
+    color: white;
+    background: darkslateblue;
+}
+
+a:active {
+    text-decoration: none;
+    color: white;
+    background: darkslategray;
+}
+
+input:focus {
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.75);
+    outline: none;
+    border: 5px solid black;
+}
+
+input:required {
+    border-color: firebrick;
+}
+
+#disabled_input:disabled {
+    background-color: rebeccapurple;
+    cursor: not-allowed;
+}
+
+#enabled_input:enabled {
+    background-color: darkseagreen;
+    cursor: pointer;
+}
+
+#my_checkbox:checked ~ p {
+    background: deepskyblue;
+}
+
+.heading {
+  transition: all 1s ease-in-out;
+}
+
+.heading:hover {
+  background: mediumorchid;
+}
+
+.list_father .list li:first-child {
+    background: #f00;
+}
+
+.list_father .list li:nth-child(2) {
+    background: #ffff00;
+}
+
+.list_father .list li:last-child {
+    background: #0f0;
+}
