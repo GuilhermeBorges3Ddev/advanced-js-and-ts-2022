@@ -1,0 +1,73 @@
+.box {
+  background: red;
+  height: 120px;
+  width: 120px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+div {
+  color: initial;
+  margin-left: 20px;
+}
+
+#first_paragraph,
+#first_heading {
+  color: magenta;
+}
+
+body div section #second_paragraph,
+body div section #second_heading {
+  color: red;
+}
+
+section.checkboxes {
+  margin: 20px 0 0 20px;
+}
+
+.main_content {
+  margin-top: 20px;
+  padding: 20px 20px;
+  border: 1px dashed black;
+}
+
+.main_content h2.heading {
+  font-style: italic;
+  color: red;
+}
+
+.father {
+  margin-top: 20px;
+}
+
+.father > .daughter {
+  color: red;
+}
+
+.big_father h1 + p {
+  color: royalblue;
+}
+
+.big_father p + h1 {
+  color: salmon;
+}
+
+.big_father h1 ~ p {
+  font-style: italic;
+}
+
+.second_big_father .one ~ .two {
+  background: pink;
+}
+
+[my-attribute="value"] {
+  text-decoration: underline slateblue;
+}
+
+[checked] {
+  width: 50px;
+  height: 50px;
+}

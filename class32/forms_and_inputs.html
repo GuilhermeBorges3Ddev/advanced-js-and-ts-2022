@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms and Inputs</title>
+    <style>
+      body {
+        font-family: sans-serif;
+      }
+      label {
+        cursor: pointer;
+        display: block;
+      }
+      .input_wrapper {
+        margin: 20px 0;
+      }
+      #reset_btn,
+      #send_btn {
+        padding: 5px 10px;
+        color: #fff;
+        font-weight: 700;
+        cursor: pointer;
+      }
+      #reset_btn {
+        background-color: #f00;
+      }
+      #send_btn {
+        background-color: #0f0;
+      }
+      textarea {
+        resize: none;
+        width: 250px;
+        height: 150px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>My form</h1>
+    <form action="#" method="get" target="_blank" autocomplete="off">
+      <div class="input_wrapper">
+        <label for="name">Name:</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Type your name"
+          required
+        />
+      </div>
+      <div class="input_wrapper">
+        <label for="dev">I'm a developer:</label>
+        <input type="checkbox" id="dev" name="dev" value="Yes" checked />
+      </div>
+      <div class="input_wrapper">
+        <label for="receive">I wanna receive emails:</label>
+        <input
+          type="radio"
+          id="receive"
+          name="receive"
+          value="receive"
+          checked
+        />
+        <label for="dont_receive">I DON'T wanna receive emails:</label>
+        <input
+          type="radio"
+          id="dont_receive"
+          name="receive"
+          value="dont_receive"
+        />
+      </div>
+      <div class="input_wrapper">
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date" value="2022-12-25" />
+      </div>
+      <div class="input_wrapper">
+        <label for="datetime">Datetime:</label>
+        <input
+          type="datetime-local"
+          id="datetime"
+          name="datetime"
+          value="2022-01-22T22:00"
+        />
+      </div>
+      <div class="input_wrapper">
+        <label for="time">Time:</label>
+        <input type="time" id="time" name="time" value="00:00:01" />
+      </div>
+      <div class="input_wrapper">
+        <label for="color">Favorite color:</label>
+        <input type="color" id="color" name="color" value="#FF0FF0" />
+      </div>
+      <div class="input_wrapper">
+        <label for="email">Email:</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="ex.:email@provider.com"
+        />
+      </div>
+      <div class="input_wrapper">
+        <label for="number">Number:</label>
+        <input
+          type="number"
+          id="number"
+          name="number"
+          placeholder="0"
+          min="0"
+          max="1000"
+          step="100"
+        />
+      </div>
+      <div class="input_wrapper">
+        <label for="file">File:</label>
+        <input
+          type="file"
+          id="file"
+          name="file"
+          accept="image/*,.xlsx"
+          multiple
+        />
+      </div>
+      <div class="input_wrapper">
+        <label for="password">Password:</label>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          placeholder="Type your password"
+        />
+      </div>
+      <div class="input_wrapper">
+        <label for="range">Select your lvl of HTML in the range:</label>
+        <input
+          type="range"
+          id="range"
+          name="range"
+          min="0"
+          max="10"
+          step="2"
+          list="tickmarks"
+        />
+        <datalist id="tickmarks">
+          <option value="0" label="0%"></option>
+          <option value="2" label="20%"></option>
+          <option value="4" label="40%"></option>
+          <option value="6" label="60%"></option>
+          <option value="8" label="80%"></option>
+          <option value="10" label="100%"></option>
+        </datalist>
+      </div>
+      <div class="input_wrapper">
+        <label for="url">Your site here:</label>
+        <input
+          type="url"
+          id="url"
+          name="url"
+          placeholder="https://mysite.com"
+        />
+      </div>
+      <div class="input_wrapper">
+        <label for="search">Search for some category:</label>
+        <input
+          type="search"
+          id="search"
+          name="search"
+          placeholder="Type your category here"
+        />
+      </div>
+      <div class="input_wrapper">
+        <label for="select">Choose your favorite fruit:</label>
+        <select name="select" id="select">
+          <optgroup label="Citric fruits">
+            <option value="pineapple">Pineapple</option>
+            <option value="orange" label="Orange"></option>
+            <option value="lemon">Lemon</option>
+          </optgroup>
+          <optgroup label="Small fruits">
+            <option value="blueberry" selected>Blueberry</option>
+            <option value="cherry" disabled>Cherry</option>
+            <option value="blackberry">Blackberry</option>
+          </optgroup>
+        </select>
+      </div>
+      <div class="input_wrapper">
+        <label for="textarea">Send a message for us:</label>
+        <textarea id="textarea" name="textarea"></textarea>
+      </div>
+      <div class="input_wrapper">
+        <button id="reset_btn" type="reset">Reset</button>
+        <button id="send_btn" type="submit">Send</button>
+      </div>
+    </form>
+  </body>
+</html>
