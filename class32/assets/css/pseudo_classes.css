@@ -65,3 +65,24 @@ input:required {
 .list_father .list li:last-child {
     background: #0f0;
 }
+
+.p:not(.middle) {
+    color: salmon;
+}
+
+.checkbox_unique:not(:checked) + p {
+   color: sandybrown;
+   background: blue;
+} 
+
+.brothers_list li:nth-child(even):hover {
+    background: blue;
+}
+
+.brothers_list li:nth-child(odd) {
+    background: gold;
+}
+
+.brothers_list li:nth-child(3n+5) {
+    background: olivedrab;
+}
