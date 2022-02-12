@@ -1,0 +1,38 @@
+ul li::before {
+  content: " - ";
+  background: blue;
+  color: #fff;
+  display: block;
+}
+
+ul li::after {
+  content: " - ";
+  background: red;
+  color: #fff;
+  display: block;
+}
+
+p {
+  font-size: 24px;
+}
+
+p::first-letter {
+  font-size: 50px;
+  font-weight: 900;
+  display: block;
+  float: left;
+  margin: 0 10px 10px 0;
+}
+
+p::first-line {
+  background: lightsalmon;
+}
+
+p::selection {
+  background: #000;
+  color: #fff;
+}
+
+input[name="surname"]::placeholder {
+    color: violet;
+}
