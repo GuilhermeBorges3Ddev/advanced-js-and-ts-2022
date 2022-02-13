@@ -1,0 +1,39 @@
+/* 
+    ID    Classes, attributes and pseudo-classes    Elements  and pseuso-elements
+    2     2                                         1
+    2     2                                         3
+    1     0                                         0
+    0     1                                         0
+    1     1                                         0
+    1     1                                         1
+    2     1                                         1
+*/
+
+#b.bclass p#p.p {
+  background: lime;
+}
+
+body#b.bclass p#p.p::selection {
+  background: #722f37 !important;
+  color: white !important;
+}
+
+#p {
+  background: red;
+}
+
+.p {
+  background: yellow;
+}
+
+#p.p {
+  background: blue;
+}
+
+p#p.p {
+  background: gray;
+}
+
+#b p#p.p {
+  background: green;
+}
