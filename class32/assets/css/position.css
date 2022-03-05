@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+}
+
+ul {
+  height: 150px;
+  border: 1px solid black;
+  overflow-y: auto;
+}
+
+ul li.sticky {
+  position: sticky;
+  scroll-behavior: smooth;
+  top: 0;
+  background: gray;
+}
+
+.father {
+  height: 125vh;
+}
+
+.children_one,
+.children_two {
+  width: 300px;
+  height: 300px;
+  background: rgba(250, 128, 114, 1);
+  margin: 10px;
+}
+
+.children_one {
+  background: greenyellow;
+  position: fixed;
+  top: 30%;
+  right: 0;
+}
+
+.children_two {
+  background: orange;
+  position: relative;
+  top: 100px;
+  left: 100px;
+}
+
+.children_two_sun {
+  position: absolute;
+  font-size: 50px;
+  background: #fff;
+  top: 50%;
+  margin-top: -29px;
+  left: 50%;
+  margin-left: -37.5px;
+}
