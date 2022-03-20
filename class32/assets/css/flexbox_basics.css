@@ -6,13 +6,19 @@
 
 .flex-container {
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: stretch;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background: yellow;
   height: 500px;
 }
 
-.flex-item {
+.flex-item  {
   background: red;
+  color: white;
+  margin: 10px;
+}
+
+.flex-item:nth-child(3) {
+  font-size: 50px;
 }
