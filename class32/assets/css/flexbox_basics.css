@@ -6,19 +6,42 @@
 
 .flex-container {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  /* flex-direction: row;
+  flex-wrap: wrap; */
+  flex-flow: row wrap; /* Shotcut for the 2 lines above */
+  justify-content: space-between;
   background: yellow;
-  height: 500px;
 }
 
 .flex-item  {
-  background: red;
+  /* flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis: 320px; */
+  flex: 1 0 320px; /* Shotcut for the 3 lines above */
+  height: 200px;
   color: white;
-  margin: 10px;
+  background: red;
+}
+
+/* 
+  Making flex items follow these order: Four - One - Two - Five - Three
+  Orders ----------------------------->  0   -  1  -  2  -  3   - 4
+*/
+
+.flex-item:nth-child(1) {
+  order: 1;
+}
+
+.flex-item:nth-child(2)  {
+  order: 2;
+  flex: 10 0 320px;
+  background: peru;
 }
 
 .flex-item:nth-child(3) {
-  font-size: 50px;
+  order: 4;
+}
+
+.flex-item:nth-child(5) {
+  order: 3;
 }
